@@ -2,6 +2,9 @@
 
 Unity prototype for exploring a room, switching camera modes, selecting objects, and previewing object material variants.
 
+## 🎥 Gameplay Demo
+[![Watch Demo](demo/SampleRoomThumbNail.png)](demo/Sampleroomeditor.mp4)
+
 ## What this project does
 
 This prototype combines:
