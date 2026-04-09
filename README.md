@@ -132,24 +132,4 @@ Primary gameplay scripts:
 - `Assets/scripts/ObjectMaterialMapper.cs`
 - `Assets/scripts/UIController.cs`
 
-Additional scripts under `Assets/Fries and Seagull/Interior 01/Scripts` are environment/sample asset behaviors and are separate from the main prototype flow above.
 
-## How to extend
-
-### Add a new interactive object
-1. Add `Object` component to the new object root.
-2. Assign a unique `itemID`.
-3. Add/assign its hotspot UI `Button`.
-4. Create/assign a `camPos` transform framing the object.
-5. Add matching `itemID` entry in `ObjectMaterialMapper` with material variants.
-
-### Add another camera mode
-1. Extend `VirtualCam` enum.
-2. Add a corresponding entry in `CameraManager.camList`.
-3. Handle mode activation logic in `Manager.SetVirtualCam`.
-4. Update UI and mode-based listeners where needed.
-
-## Notes
-
-- This project currently uses Unity's legacy Input API (`Input.GetAxis`, mouse buttons, key checks).
-- Material application currently targets the first child renderer found by `GetComponentInChildren<Renderer>()`.
